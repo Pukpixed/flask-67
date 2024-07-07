@@ -7,7 +7,7 @@
 {% block content %}
     <h1>Create Flower</h1>
 
-    <form action="{{ url_for('store') }}" methods="post">
+    <form action="{{ url_for('store') }}" method="post">
         <div class="mb-3">
             <label for="flower_name" class="form-label">Flower Name</label>
             <input type="text" class="form-control" name="flower_name" id="flower_name" placeholder="your flower name" required>
@@ -40,8 +40,6 @@
 
         <div class="mb-3">
             <button type="submit" class="btn btn-primary">Submit</button>
-
         </div>
-
     </form>
 {% endblock %}

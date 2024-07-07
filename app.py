@@ -110,7 +110,7 @@ def edit(flower_id):
 
 @app.route("/updete/<flower_id>", methods=["POST"])
 def update():
-    if request.method == "POST":
+    if request.methods == "POST":
         flower_name = request.form['flower_name']
         lat_num = request.form['lat_num']
         long_num = request.form['long_num']
